@@ -15,7 +15,7 @@ app.set('view engine', 'hbs')
 app.set('views', templatePath)
 hbs.registerPartials(partialsPath)
 
-app.get('/login', (req,res)=>{
+app.get('/', (req,res)=>{
     res.render('login')
 })
 
