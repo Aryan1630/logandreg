@@ -112,6 +112,12 @@ input[type="text"], input[type="password"]{
     text-decoration: none;
 }
 
+
+.admin_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 480px) {
@@ -130,7 +136,7 @@ input[type="text"], input[type="password"]{
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     .login-box{
         width: 80%;
         height: 40%;
@@ -144,7 +150,35 @@ input[type="text"], input[type="password"]{
     }
 }
 
-@media only screen 
+@media screen and (min-width: 768px) {
+    .login-box{
+        width: 40%;
+        height: 40%;
+    }
+    
+    .form{
+    margin-bottom: 20px;
+    }
+    .register-box{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 912px) {
+    .login-box{
+        width: 20%;
+        height: 40%;
+    }
+    
+    .form{
+    margin-bottom: 20px;
+    }
+    .register-box{
+        width: 40%;
+    }
+}
+
+/* @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
@@ -160,4 +194,4 @@ input[type="text"], input[type="password"]{
     .register-box{
         width: 60%;
     }
-}
+} */
